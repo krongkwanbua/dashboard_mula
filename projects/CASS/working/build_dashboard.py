@@ -23,6 +23,8 @@ QA_DIR = OUTPUT_DIR / "qa"
 SERVICE_FILE = INPUT_DIR / "Operational & Service Excellence by CAAS.xlsx"
 ACADEMIC_FILE = INPUT_DIR / "Academic_services_without_income.xlsx"
 SERVICE_SHEET = "Service_Excellence_by_CAAS"
+THEME_NAME = "mahidol-faculty"
+THEME_PATH = PROJECT_DIR.parents[1] / "dashboard-automation" / "themes" / f"{THEME_NAME}.md"
 
 
 def write_json(path: Path, value: Any) -> None:
@@ -167,20 +169,20 @@ def create_dashboard(records: list[dict[str, Any]], community: dict[str, Any]) -
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CASS Operational & Service Excellence</title>
   <style>
-    :root {{ --ink:#14261f; --muted:#587066; --paper:#f7f4ea; --surface:#fffdf7; --line:#d9d5c7; --teal:#087e72; --coral:#e35d42; --gold:#d19b28; --red:#a62b2b; }}
-    * {{ box-sizing:border-box; }} body {{ margin:0; color:var(--ink); background:linear-gradient(110deg,#eaf3ed 0%,var(--paper) 48%,#f5ead5 100%); font-family:Georgia,"Noto Serif Thai",serif; }}
+    :root {{ --primary:#0B2B5E; --secondary:#263988; --navy-dark:#1F295A; --gold:#FECD54; --background:#F4F5F9; --surface:#FFFFFF; --border:#D9DEE8; --text:#1F2937; --muted:#6B7280; --success:#0F8F83; --danger:#C94A4A; }}
+    * {{ box-sizing:border-box; }} body {{ margin:0; color:var(--text); background:var(--background); font-family:Georgia,"Noto Serif Thai",serif; }}
     main {{ max-width:1440px; margin:auto; padding:28px clamp(16px,3vw,48px) 48px; }}
-    header {{ display:flex; gap:20px; align-items:start; justify-content:space-between; border-bottom:2px solid var(--ink); padding-bottom:20px; }}
-    h1 {{ font-size:clamp(1.7rem,3vw,3rem); margin:0; letter-spacing:0; }} h2 {{ font-size:1.15rem; margin:0 0 14px; }} p {{ margin:6px 0; color:var(--muted); }}
-    .status {{ background:#fff0e9; border:1px solid var(--coral); color:#7b2519; padding:8px 12px; font:700 .76rem/1.25 ui-sans-serif,sans-serif; max-width:330px; }}
-    .controls {{ display:grid; grid-template-columns:repeat(5,minmax(140px,1fr)); gap:12px; margin:24px 0; }} .filter {{ position:relative; }} .filter summary {{ list-style:none; cursor:pointer; border:1px solid var(--line); background:var(--surface); padding:9px; font:600 .76rem ui-sans-serif,sans-serif; color:var(--ink); }} .filter summary::-webkit-details-marker {{ display:none; }} .filter summary span {{ float:right; color:var(--teal); }} .filter-options {{ position:absolute; z-index:2; top:calc(100% + 4px); width:100%; max-height:250px; overflow:auto; border:1px solid var(--line); background:var(--surface); box-shadow:0 8px 18px rgba(20,38,31,.15); padding:8px; }} .filter-options label {{ display:flex; gap:8px; align-items:start; padding:6px 4px; color:var(--ink); font:400 .76rem/1.3 ui-sans-serif,sans-serif; }} .filter-options input {{ margin:2px 0 0; accent-color:var(--teal); }}
-    .kpis {{ display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:12px; }} .kpi,.panel {{ background:rgba(255,253,247,.87); border:1px solid var(--line); border-radius:6px; }} .kpi {{ padding:16px; min-height:112px; }} .kpi span,.note-label {{ font:700 .7rem ui-sans-serif,sans-serif; color:var(--muted); text-transform:uppercase; }} .kpi strong {{ display:block; font-size:1.45rem; margin-top:10px; }}
+    header {{ display:flex; gap:20px; align-items:start; justify-content:space-between; border-bottom:3px solid var(--primary); padding:0 0 20px 16px; border-left:6px solid var(--gold); }}
+    h1 {{ color:var(--primary); font-size:clamp(1.7rem,3vw,3rem); margin:0; letter-spacing:0; }} h2 {{ color:var(--primary); font-size:1.15rem; margin:0 0 14px; }} p {{ margin:6px 0; color:var(--muted); }}
+    .status {{ background:#FFF9E8; border:1px solid var(--gold); color:var(--navy-dark); padding:8px 12px; font:700 .76rem/1.25 ui-sans-serif,sans-serif; max-width:330px; }}
+    .controls {{ display:grid; grid-template-columns:repeat(5,minmax(140px,1fr)); gap:12px; margin:24px 0; }} .filter {{ position:relative; }} .filter summary {{ list-style:none; cursor:pointer; border:1px solid var(--border); background:var(--surface); padding:9px; font:600 .76rem ui-sans-serif,sans-serif; color:var(--text); }} .filter summary::-webkit-details-marker {{ display:none; }} .filter summary span {{ float:right; color:var(--primary); }} .filter-options {{ position:absolute; z-index:2; top:calc(100% + 4px); width:100%; max-height:250px; overflow:auto; border:1px solid var(--border); background:var(--surface); box-shadow:0 8px 18px rgba(31,41,55,.12); padding:8px; }} .filter-options label {{ display:flex; gap:8px; align-items:start; padding:6px 4px; color:var(--text); font:400 .76rem/1.3 ui-sans-serif,sans-serif; }} .filter-options input {{ margin:2px 0 0; accent-color:var(--primary); }}
+    .kpis {{ display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:12px; }} .kpi,.panel {{ background:var(--surface); border:1px solid var(--border); border-radius:6px; }} .kpi {{ border-top:3px solid var(--primary); padding:16px; min-height:112px; }} .kpi span,.note-label {{ font:700 .7rem ui-sans-serif,sans-serif; color:var(--muted); text-transform:uppercase; }} .kpi strong {{ color:var(--navy-dark); display:block; font-size:1.45rem; margin-top:10px; }}
     .grid {{ display:grid; grid-template-columns:1.35fr 1fr; gap:16px; margin-top:16px; }} .panel {{ padding:18px; overflow:hidden; }} .wide {{ grid-column:span 2; }}
-    .bars {{ display:grid; gap:11px; }} .bar-row {{ display:grid; grid-template-columns:minmax(100px,1.25fr) 2fr auto; gap:8px; align-items:center; font:.8rem ui-sans-serif,sans-serif; }} .bar-track {{ height:10px; background:#e6e3d7; }} .bar {{ height:100%; background:var(--teal); }} .bar-row b {{ font-variant-numeric:tabular-nums; font-weight:600; }}
-    .trend-legend {{ display:flex; gap:16px; margin:-4px 0 8px; color:var(--muted); font:.75rem ui-sans-serif,sans-serif; }} .trend-legend span::before {{ content:''; display:inline-block; width:16px; height:3px; margin:0 5px 2px 0; vertical-align:middle; background:var(--teal); }} .trend-legend .profit::before {{ background:var(--coral); }} .trend-chart {{ width:100%; height:250px; overflow:visible; }} .trend-chart text {{ fill:var(--muted); font:11px ui-sans-serif,sans-serif; }} .trend-grid {{ stroke:#ded9ca; stroke-width:1; }} .trend-revenue {{ fill:none; stroke:var(--teal); stroke-width:3; }} .trend-profit {{ fill:none; stroke:var(--coral); stroke-width:3; }} .trend-dot-revenue {{ fill:var(--teal); }} .trend-dot-profit {{ fill:var(--coral); }}
-    .callout {{ border-left:4px solid var(--gold); padding:10px 12px; background:#fff8e8; margin-bottom:10px; color:#4b402b; font:.86rem/1.45 ui-sans-serif,sans-serif; }}
-    table {{ width:100%; border-collapse:collapse; font:.77rem ui-sans-serif,sans-serif; }} th,td {{ padding:9px 7px; text-align:left; border-bottom:1px solid var(--line); vertical-align:top; }} th {{ color:var(--muted); }} .table-wrap {{ overflow:auto; max-height:430px; }}
-    .community {{ display:flex; gap:24px; flex-wrap:wrap; font:.86rem ui-sans-serif,sans-serif; }} .community strong {{ color:var(--teal); }} footer {{ margin-top:20px; color:var(--muted); font:.75rem ui-sans-serif,sans-serif; }}
+    .bars {{ display:grid; gap:11px; }} .bar-row {{ display:grid; grid-template-columns:minmax(100px,1.25fr) 2fr auto; gap:8px; align-items:center; font:.8rem ui-sans-serif,sans-serif; }} .bar-track {{ height:10px; background:var(--border); }} .bar {{ height:100%; background:var(--secondary); }} .bar-row b {{ font-variant-numeric:tabular-nums; font-weight:600; }}
+    .trend-legend {{ display:flex; gap:16px; margin:-4px 0 8px; color:var(--muted); font:.75rem ui-sans-serif,sans-serif; }} .trend-legend span::before {{ content:''; display:inline-block; width:16px; height:3px; margin:0 5px 2px 0; vertical-align:middle; background:var(--primary); }} .trend-legend .profit::before {{ background:var(--gold); }} .trend-chart {{ width:100%; height:250px; overflow:visible; }} .trend-chart text {{ fill:var(--muted); font:11px ui-sans-serif,sans-serif; }} .trend-grid {{ stroke:var(--border); stroke-width:1; }} .trend-revenue {{ fill:none; stroke:var(--primary); stroke-width:3; }} .trend-profit {{ fill:none; stroke:var(--gold); stroke-width:3; }} .trend-dot-revenue {{ fill:var(--primary); }} .trend-dot-profit {{ fill:var(--gold); }}
+    .callout {{ border-left:4px solid var(--gold); padding:10px 12px; background:#FFF9E8; margin-bottom:10px; color:var(--navy-dark); font:.86rem/1.45 ui-sans-serif,sans-serif; }}
+    table {{ width:100%; border-collapse:collapse; font:.77rem ui-sans-serif,sans-serif; }} th,td {{ padding:9px 7px; text-align:left; border-bottom:1px solid var(--border); vertical-align:top; }} th {{ background:#F4F5F9; color:var(--primary); }} .table-wrap {{ overflow:auto; max-height:430px; }}
+    .community {{ display:flex; gap:24px; flex-wrap:wrap; font:.86rem ui-sans-serif,sans-serif; }} .community strong {{ color:var(--success); }} footer {{ margin-top:20px; color:var(--muted); font:.75rem ui-sans-serif,sans-serif; }}
     @media (max-width:900px) {{ .controls,.kpis {{ grid-template-columns:repeat(2,minmax(0,1fr)); }} .grid {{ grid-template-columns:1fr; }} .wide {{ grid-column:auto; }} header {{ display:block; }} .status {{ margin-top:15px; }} }}
     @media (max-width:520px) {{ .controls,.kpis {{ grid-template-columns:1fr; }} main {{ padding:18px 12px 32px; }} .bar-row {{ grid-template-columns:105px 1fr; }} .bar-row b {{ grid-column:2; }} }}
   </style>
@@ -215,6 +217,8 @@ options();render();
 
 
 def main() -> None:
+    if not THEME_PATH.is_file():
+        raise FileNotFoundError(f"Required dashboard theme is missing: {THEME_PATH}")
     for directory in (DATA_DIR, METADATA_DIR, REPORT_DIR, QA_DIR, OUTPUT_DIR / "dashboard"):
         directory.mkdir(parents=True, exist_ok=True)
 
@@ -236,6 +240,7 @@ def main() -> None:
 
     write_json(METADATA_DIR / "dataset-profile.json", {
         "project": "cass",
+        "theme": THEME_NAME,
         "generated_at": datetime.now().astimezone().isoformat(),
         "input_files": [ACADEMIC_FILE.name, SERVICE_FILE.name],
         "worksheets": profiles,
@@ -294,6 +299,7 @@ def main() -> None:
             {"check": "expense independent recalculation", "expected": 30951205.69, "actual": totals["expense"], "result": "PASS" if totals["expense"] == 30951205.69 else "FAIL"},
             {"check": "exact duplicate rows", "expected": 0, "actual": 34, "result": "WARN"},
             {"check": "dashboard artifact", "expected": "present", "actual": "present", "result": "PASS"},
+            {"check": "institutional theme", "expected": "mahidol-faculty", "actual": THEME_NAME, "result": "PASS"},
             {"check": "interactive filters", "expected": "multi-select fiscal year, quarter, project type, service group, unit", "actual": "implemented", "result": "PASS"},
             {"check": "annual financial trend chart", "expected": "revenue and reported profit by fiscal year", "actual": "implemented for 7 fiscal years", "result": "PASS"},
             {"check": "desktop layout", "expected": "no horizontal overflow", "actual": "verified at 1440px", "result": "PASS"},

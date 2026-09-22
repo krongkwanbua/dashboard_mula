@@ -1,6 +1,6 @@
 {
   "project": "cass",
-  "timestamp": "2026-09-22T10:57:49.548200+07:00",
+  "timestamp": "2026-09-22T11:09:06.482285+07:00",
   "status": "NOT READY",
   "critical_errors": [
     {
@@ -41,6 +41,12 @@
       "check": "dashboard artifact",
       "expected": "present",
       "actual": "present",
+      "result": "PASS"
+    },
+    {
+      "check": "institutional theme",
+      "expected": "mahidol-faculty",
+      "actual": "mahidol-faculty",
       "result": "PASS"
     },
     {

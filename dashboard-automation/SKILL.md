@@ -54,6 +54,15 @@ DISCOVER
 9. State assumptions and data limitations.
 10. Do not publish sensitive raw data.
 
+## Institutional theme
+
+All generated dashboards must use the Mahidol Faculty institutional theme at:
+`dashboard-automation/themes/mahidol-faculty.md`
+
+Apply its color tokens, flat background, card treatment, and chart styling.
+Do not introduce gradients, decorative backgrounds, unapproved primary colors,
+neon colors, or 3D charts. Record the selected theme in each project config.
+
 ## Selecting a project
 
 When the user says:
@@ -89,6 +98,7 @@ Use this default config:
   "show_insights": true,
   "show_data_table": true,
   "responsive": true
+  "theme": "mahidol-faculty"
 }
 
 Do not ask for information that can reasonably be inferred from the data.

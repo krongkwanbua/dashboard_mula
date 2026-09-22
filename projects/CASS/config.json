@@ -6,5 +6,6 @@
   "audience": "ผู้บริหารและผู้ปฏิบัติงาน CAAS",
   "show_insights": true,
   "show_data_table": true,
-  "responsive": true
+  "responsive": true,
+  "theme": "mahidol-faculty"
 }
