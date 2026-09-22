@@ -1,6 +1,6 @@
 {
   "project": "cass",
-  "timestamp": "2026-09-22T11:09:06.482285+07:00",
+  "timestamp": "2026-09-22T11:14:27.544558+07:00",
   "status": "NOT READY",
   "critical_errors": [
     {
@@ -50,6 +50,12 @@
       "result": "PASS"
     },
     {
+      "check": "institutional logo",
+      "expected": "dashboard asset and header display",
+      "actual": "assets/mahidol-logo.png",
+      "result": "PASS"
+    },
+    {
       "check": "interactive filters",
       "expected": "multi-select fiscal year, quarter, project type, service group, unit",
       "actual": "implemented",
@@ -57,8 +63,8 @@
     },
     {
       "check": "annual financial trend chart",
-      "expected": "revenue and reported profit by fiscal year",
-      "actual": "implemented for 7 fiscal years",
+      "expected": "revenue and reported profit labels by fiscal year",
+      "actual": "implemented for 7 fiscal years with value labels",
       "result": "PASS"
     },
     {

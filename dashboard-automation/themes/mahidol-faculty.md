@@ -59,3 +59,11 @@ The agent MAY:
 
 The dashboard must remain visually recognizable as part of
 the same dashboard system even when the dataset changes.
+
+HEADER AND CHART RULES
+
+- Display `dashboard-automation/assets/logo.png` in every dashboard header.
+- Use a flat white institutional header with navy headings and a restrained
+	gold divider or accent.
+- Show readable value labels for line-chart points; abbreviate large values
+	only when necessary for legibility and retain exact values in tooltips.

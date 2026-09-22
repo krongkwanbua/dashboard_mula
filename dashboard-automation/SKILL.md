@@ -62,6 +62,9 @@ All generated dashboards must use the Mahidol Faculty institutional theme at:
 Apply its color tokens, flat background, card treatment, and chart styling.
 Do not introduce gradients, decorative backgrounds, unapproved primary colors,
 neon colors, or 3D charts. Record the selected theme in each project config.
+Copy `dashboard-automation/assets/logo.png` into each generated dashboard's
+`assets/` directory and display it in the institutional header. Show readable
+data labels for plotted values unless density would make labels misleading.
 
 ## Selecting a project
 
