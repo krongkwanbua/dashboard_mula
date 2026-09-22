@@ -1,6 +1,6 @@
 {
   "project": "cass",
-  "run_id": "cass-20260922T114821",
+  "run_id": "cass-20260922T115052",
   "input_files": [
     "Academic_services_without_income.xlsx",
     "Operational & Service Excellence by CAAS.xlsx"
@@ -26,5 +26,5 @@
   "critical_errors": [
     "reported profit does not reconcile to revenue minus expense"
   ],
-  "timestamp": "2026-09-22T11:48:21.808078+07:00"
+  "timestamp": "2026-09-22T11:50:52.936786+07:00"
 }
