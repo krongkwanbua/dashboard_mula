@@ -9,7 +9,7 @@
 - **High**: The consolidated source contains 34 exact duplicate rows. Records are preserved and included in totals.
 - **High**: The consolidated source has material missingness in participant, satisfaction, and segmentation fields. Missing numeric values are represented as 0 only in the analytical copy; this is not an imputation.
 - **Medium**: In `income_generating_project`, satisfaction reaches 6.46, outside the apparent 0-5 scale.
-- **Medium**: Community activity data has 33 rows but only 10 have project names and financial/participant fields.
+- **Medium**: Community activity data has 33 rows but only 12 have project names and are included in the non-income drill-down. Blank source values remain blank/zero only where the source supplied no numeric value.
 
 ## Handling
 No raw record was changed or removed. The dashboard labels reported profit separately from derived profit and shows a NOT READY quality status.

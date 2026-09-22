@@ -1,7 +1,7 @@
 {
   "project": "cass",
   "theme": "mahidol-faculty",
-  "generated_at": "2026-09-22T11:35:07.602095+07:00",
+  "generated_at": "2026-09-22T11:48:21.801512+07:00",
   "input_files": [
     "Academic_services_without_income.xlsx",
     "Operational & Service Excellence by CAAS.xlsx"
@@ -318,6 +318,31 @@
       "project_type",
       "service_group",
       "unit"
+    ]
+  },
+  "non_income_academic_services_dataset": {
+    "name": "non-income-academic-services.csv",
+    "source": "Academic_services_without_income.xlsx / data",
+    "record_count": 12,
+    "fiscal_year_coverage": [
+      "2564",
+      "2565",
+      "2566",
+      "2567",
+      "2568",
+      "2569"
+    ],
+    "measures": [
+      "participants",
+      "budget",
+      "expense",
+      "satisfaction"
+    ],
+    "dimensions": [
+      "fiscal_year",
+      "format",
+      "public_outreach",
+      "social_benefit"
     ]
   }
 }

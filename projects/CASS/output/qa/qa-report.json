@@ -1,6 +1,6 @@
 {
   "project": "cass",
-  "timestamp": "2026-09-22T11:35:07.603271+07:00",
+  "timestamp": "2026-09-22T11:48:21.803437+07:00",
   "status": "NOT READY",
   "critical_errors": [
     {
@@ -77,6 +77,12 @@
       "check": "annual financial trend chart",
       "expected": "revenue and reported profit labels by fiscal year",
       "actual": "implemented for 7 fiscal years with value labels",
+      "result": "PASS"
+    },
+    {
+      "check": "non-income academic service drill-down",
+      "expected": "12 named activities with fiscal-year filter and detail table",
+      "actual": "implemented with KPI, participant, and social-benefit views",
       "result": "PASS"
     },
     {
