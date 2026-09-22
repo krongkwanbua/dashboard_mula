@@ -12,6 +12,11 @@
       "question": "ผลการดำเนินงานรวมเป็นอย่างไร"
     },
     {
+      "name": "Annual financial trend",
+      "visualization": "two-series line chart",
+      "question": "รายได้และกำไรสุทธิที่รายงานเปลี่ยนแปลงอย่างไรในแต่ละปีงบประมาณ"
+    },
+    {
       "name": "Revenue comparison",
       "visualization": "sorted horizontal bars",
       "question": "ประเภทและไตรมาสใดทำรายได้สูง"
