@@ -1,7 +1,7 @@
 {
   "project": "cass",
   "theme": "mahidol-faculty",
-  "generated_at": "2026-09-22T13:21:54.547768+07:00",
+  "generated_at": "2026-09-22T13:27:46.171061+07:00",
   "input_files": [
     "Academic_services_without_income.xlsx",
     "Operational & Service Excellence by CAAS.xlsx",
@@ -417,6 +417,34 @@
     }
   ],
   "analytical_dataset": {
+    "name": "service-excellence-records.csv",
+    "source": "Operational & Service Excellence by CAAS.xlsx for fiscal years 2563-2566; budget-control registers for fiscal years 2567-2569",
+    "record_count": 1130,
+    "fiscal_year_coverage": [
+      "2563",
+      "2564",
+      "2565",
+      "2566",
+      "2567",
+      "2568",
+      "2569"
+    ],
+    "measures": [
+      "revenue",
+      "expense",
+      "reported_profit",
+      "actual_participants",
+      "satisfaction"
+    ],
+    "dimensions": [
+      "fiscal_year",
+      "quarter",
+      "project_type",
+      "service_group",
+      "unit"
+    ]
+  },
+  "budget_control_dataset": {
     "name": "budget-control-records.csv",
     "source": "A ทะเบียนคุมงบประมาณ 2567.xlsx, A ทะเบียนคุมงบประมาณ 2568.xlsx, A ตารางคุมงบประมาณ 2569.xlsx",
     "record_count": 83,

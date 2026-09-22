@@ -1,12 +1,11 @@
 # Insight Report: CASS
 
 ## Evidence-based observations
-- The budget-register source contains **83** records, revenue of **13,400,281.96 THB**, expense of **7,654,152.68 THB**, and derived profit of **5,746,129.28 THB**.
-- **ทะเบียนคุมงบ MU-ELT** is the leading project type by recorded revenue at **6,952,610.00 THB**.
-- Total actual participants are **22,360**, against a recorded target of **31,156**.
-- Average recorded satisfaction is **4.52/5** for non-zero scores.
-- Non-income academic services include **12** named activities, **1,510** participants, budget **875,000.00 THB**, and expense **833,883.92 THB**.
+- Tab 1 preserves Operational history for fiscal years 2563-2566 and substitutes reconciled budget-register records for 2567-2569.
+- The budget-register subset contains **83** records, revenue **13,400,281.96 THB**, expense **7,654,152.68 THB**, and derived profit **5,746,129.28 THB**.
+- **Intensive** is the leading project type in Tab 1 by recorded revenue at **10,380,000.00 THB**.
+- Non-income academic services include **12** named activities and **1,510** participants.
 
 ## Limitations
 - Fiscal year 2569 may be partial; compare year-over-year changes with caution.
-- The non-income activity view includes only rows with a project name; missing attributes are displayed as supplied rather than inferred.
+- Fiscal years 2563-2566 retain the original Operational profit field, while 2567-2569 use derived profit from budget registers.

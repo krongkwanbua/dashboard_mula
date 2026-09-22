@@ -1,6 +1,6 @@
 {
   "project": "cass",
-  "timestamp": "2026-09-22T13:21:54.548730+07:00",
+  "timestamp": "2026-09-22T13:27:46.173041+07:00",
   "status": "READY WITH LIMITATIONS",
   "critical_errors": [],
   "checks": [
@@ -11,7 +11,7 @@
       "result": "PASS"
     },
     {
-      "check": "profit reconciliation",
+      "check": "FY2567-FY2569 profit reconciliation",
       "expected": 5746129.28,
       "actual": 5746129.28,
       "difference": -0.0,
@@ -55,8 +55,8 @@
     },
     {
       "check": "annual financial trend chart",
-      "expected": "revenue and derived profit labels by fiscal year",
-      "actual": "implemented for fiscal years 2567-2569 with value labels",
+      "expected": "revenue and source-aligned profit labels by fiscal year",
+      "actual": "implemented for fiscal years 2563-2569 with value labels",
       "result": "PASS"
     },
     {
