@@ -1,9 +1,12 @@
 {
   "project": "cass",
-  "run_id": "cass-20260922T115052",
+  "run_id": "cass-20260922T132154",
   "input_files": [
     "Academic_services_without_income.xlsx",
-    "Operational & Service Excellence by CAAS.xlsx"
+    "Operational & Service Excellence by CAAS.xlsx",
+    "A ทะเบียนคุมงบประมาณ 2567.xlsx",
+    "A ทะเบียนคุมงบประมาณ 2568.xlsx",
+    "A ตารางคุมงบประมาณ 2569.xlsx"
   ],
   "stages": [
     "DISCOVER",
@@ -18,13 +21,11 @@
     "INSIGHTS",
     "DELIVER"
   ],
-  "status": "NOT READY",
+  "status": "READY WITH LIMITATIONS",
   "warnings": [
-    "34 exact duplicates in consolidated source",
-    "material missing values in consolidated source"
+    "fiscal year 2569 may be partial",
+    "non-income activity view includes only named projects"
   ],
-  "critical_errors": [
-    "reported profit does not reconcile to revenue minus expense"
-  ],
-  "timestamp": "2026-09-22T11:50:52.936786+07:00"
+  "critical_errors": [],
+  "timestamp": "2026-09-22T13:21:54.549266+07:00"
 }

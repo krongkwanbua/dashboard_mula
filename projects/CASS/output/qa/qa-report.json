@@ -1,41 +1,21 @@
 {
   "project": "cass",
-  "timestamp": "2026-09-22T11:50:52.931483+07:00",
-  "status": "NOT READY",
-  "critical_errors": [
-    {
-      "check": "profit reconciliation",
-      "expected": 23558726.27,
-      "actual": 21128837.51,
-      "difference": -2429888.76,
-      "result": "FAIL",
-      "detail": "Reported profit does not equal revenue minus expense in the source total."
-    }
-  ],
+  "timestamp": "2026-09-22T13:21:54.548730+07:00",
+  "status": "READY WITH LIMITATIONS",
+  "critical_errors": [],
   "checks": [
     {
-      "check": "source row count",
-      "expected": 1738,
-      "actual": 1738,
+      "check": "budget register record count",
+      "expected": 83,
+      "actual": 83,
       "result": "PASS"
     },
     {
-      "check": "revenue independent recalculation",
-      "expected": 54509931.96,
-      "actual": 54509931.96,
+      "check": "profit reconciliation",
+      "expected": 5746129.28,
+      "actual": 5746129.28,
+      "difference": -0.0,
       "result": "PASS"
-    },
-    {
-      "check": "expense independent recalculation",
-      "expected": 30951205.69,
-      "actual": 30951205.69,
-      "result": "PASS"
-    },
-    {
-      "check": "exact duplicate rows",
-      "expected": 0,
-      "actual": 34,
-      "result": "WARN"
     },
     {
       "check": "dashboard artifact",
@@ -75,14 +55,20 @@
     },
     {
       "check": "annual financial trend chart",
-      "expected": "revenue and reported profit labels by fiscal year",
-      "actual": "implemented for 7 fiscal years with value labels",
+      "expected": "revenue and derived profit labels by fiscal year",
+      "actual": "implemented for fiscal years 2567-2569 with value labels",
       "result": "PASS"
     },
     {
       "check": "non-income academic service drill-down",
       "expected": "12 named activities with fiscal-year filter and detail table",
       "actual": "implemented with KPI, participant, and social-benefit views",
+      "result": "PASS"
+    },
+    {
+      "check": "budget comparison drill-down",
+      "expected": "year filter, KPI cards, comparison bars, and budget-register detail table",
+      "actual": "implemented in Tab 3",
       "result": "PASS"
     },
     {

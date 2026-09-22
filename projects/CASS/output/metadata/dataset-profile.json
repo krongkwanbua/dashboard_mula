@@ -1,10 +1,13 @@
 {
   "project": "cass",
   "theme": "mahidol-faculty",
-  "generated_at": "2026-09-22T11:50:52.929912+07:00",
+  "generated_at": "2026-09-22T13:21:54.547768+07:00",
   "input_files": [
     "Academic_services_without_income.xlsx",
-    "Operational & Service Excellence by CAAS.xlsx"
+    "Operational & Service Excellence by CAAS.xlsx",
+    "A ทะเบียนคุมงบประมาณ 2567.xlsx",
+    "A ทะเบียนคุมงบประมาณ 2568.xlsx",
+    "A ตารางคุมงบประมาณ 2569.xlsx"
   ],
   "worksheets": [
     {
@@ -290,17 +293,134 @@
         "สังกัด": 12
       },
       "exact_duplicate_rows": 34
+    },
+    {
+      "file": "A ทะเบียนคุมงบประมาณ 2567.xlsx",
+      "sheet": "ทะเบียนคุมงบ In-House",
+      "rows": 18,
+      "columns": 1,
+      "fields": [
+        "ทะเบียนคุมงบประมาณ  โครงการพัฒนาศักยภาพของบุคลากรเพื่อใช้ในชีวิตประจำวันและการทำงาน (In-House Training) ประจำปีงบประมาณ 2567"
+      ],
+      "missing_values": {},
+      "exact_duplicate_rows": 0
+    },
+    {
+      "file": "A ทะเบียนคุมงบประมาณ 2567.xlsx",
+      "sheet": "ทะเบียนคุมงบ MU-ELT",
+      "rows": 14,
+      "columns": 1,
+      "fields": [
+        "ทะเบียนคุมงบประมาณ  โครงการจัดสอบภาษาอังกฤษมหาวิทยาลัยมหิดล (Mahidol University English Language Test) ประจำปีงบประมาณ 2567"
+      ],
+      "missing_values": {},
+      "exact_duplicate_rows": 1
+    },
+    {
+      "file": "A ทะเบียนคุมงบประมาณ 2567.xlsx",
+      "sheet": "MU-ELT รหัส 67",
+      "rows": 4,
+      "columns": 1,
+      "fields": [
+        "ทะเบียนคุมงบประมาณ  โครงการจัดสอบภาษาอังกฤษมหาวิทยาลัยมหิดล Mahidol University English Language Test สำหรับการแบ่งกลุ่มเรียนวิชาภาษาอังกฤษพื้นฐาน"
+      ],
+      "missing_values": {},
+      "exact_duplicate_rows": 0
+    },
+    {
+      "file": "A ทะเบียนคุมงบประมาณ 2567.xlsx",
+      "sheet": "บันทึกการชำระหนี้",
+      "rows": 25,
+      "columns": 1,
+      "fields": [
+        "บันทึกการชำระหนี้ 2567"
+      ],
+      "missing_values": {},
+      "exact_duplicate_rows": 0
+    },
+    {
+      "file": "A ทะเบียนคุมงบประมาณ 2567.xlsx",
+      "sheet": "Sheet1",
+      "rows": 9,
+      "columns": 1,
+      "fields": [
+        "โครงการปีงบประมาณ 2567 ศูนย์ทดสอบภาษาและพัฒนาทักษะทางวิชาการ (CAAS)"
+      ],
+      "missing_values": {},
+      "exact_duplicate_rows": 0
+    },
+    {
+      "file": "A ทะเบียนคุมงบประมาณ 2568.xlsx",
+      "sheet": "ทะเบียนคุมงบ In-House",
+      "rows": 13,
+      "columns": 1,
+      "fields": [
+        "ข้อมูลสารสนเทศ โครงการพัฒนาศักยภาพของบุคลากรเพื่อใช้ในชีวิตประจำวันและการทำงาน (In-House Training) ประจำปีงบประมาณ 2568"
+      ],
+      "missing_values": {},
+      "exact_duplicate_rows": 0
+    },
+    {
+      "file": "A ทะเบียนคุมงบประมาณ 2568.xlsx",
+      "sheet": "ทะเบียนคุมงบ MU-ELT",
+      "rows": 17,
+      "columns": 1,
+      "fields": [
+        "ข้อมูลสารสนเทศ โครงการจัดสอบภาษาอังกฤษมหาวิทยาลัยมหิดล (Mahidol University English Language Test) ประจำปีงบประมาณ 2568"
+      ],
+      "missing_values": {},
+      "exact_duplicate_rows": 0
+    },
+    {
+      "file": "A ทะเบียนคุมงบประมาณ 2568.xlsx",
+      "sheet": "บันทึกการชำระหนี้",
+      "rows": 22,
+      "columns": 1,
+      "fields": [
+        "บันทึกการชำระหนี้ 2568"
+      ],
+      "missing_values": {},
+      "exact_duplicate_rows": 0
+    },
+    {
+      "file": "A ตารางคุมงบประมาณ 2569.xlsx",
+      "sheet": "ทะเบียนคุมงบ In-House",
+      "rows": 7,
+      "columns": 1,
+      "fields": [
+        "ทะเบียนคุมงบประมาณโครงการบริการจัดอบรม (In-house Training) ประจำปีงบประมาณ 2569"
+      ],
+      "missing_values": {},
+      "exact_duplicate_rows": 0
+    },
+    {
+      "file": "A ตารางคุมงบประมาณ 2569.xlsx",
+      "sheet": "ทะเบียนคุมงบ MU-ELT",
+      "rows": 17,
+      "columns": 1,
+      "fields": [
+        "ทะเบียนคุมงบประมาณ  โครงการจัดสอบภาษาอังกฤษมหาวิทยาลัยมหิดล (Mahidol University English Language Test) ประจำปีงบประมาณ 2569"
+      ],
+      "missing_values": {},
+      "exact_duplicate_rows": 0
+    },
+    {
+      "file": "A ตารางคุมงบประมาณ 2569.xlsx",
+      "sheet": "บันทึกการชำระหนี้",
+      "rows": 9,
+      "columns": 1,
+      "fields": [
+        "บันทึกการชำระหนี้ 2568"
+      ],
+      "missing_values": {},
+      "exact_duplicate_rows": 0
     }
   ],
   "analytical_dataset": {
-    "name": "service-excellence-records.csv",
-    "source": "Operational & Service Excellence by CAAS.xlsx / Service_Excellence_by_CAAS",
-    "record_count": 1738,
+    "name": "budget-control-records.csv",
+    "source": "A ทะเบียนคุมงบประมาณ 2567.xlsx, A ทะเบียนคุมงบประมาณ 2568.xlsx, A ตารางคุมงบประมาณ 2569.xlsx",
+    "record_count": 83,
     "fiscal_year_coverage": [
-      "2563",
-      "2564",
-      "2565",
-      "2566",
       "2567",
       "2568",
       "2569"
@@ -314,10 +434,10 @@
     ],
     "dimensions": [
       "fiscal_year",
-      "quarter",
       "project_type",
       "service_group",
-      "unit"
+      "source_file",
+      "source_sheet"
     ]
   },
   "non_income_academic_services_dataset": {

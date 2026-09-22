@@ -19,12 +19,12 @@
     {
       "name": "Annual financial trend",
       "visualization": "two-series line chart",
-      "question": "รายได้และกำไรสุทธิที่รายงานเปลี่ยนแปลงอย่างไรในแต่ละปีงบประมาณ"
+      "question": "รายได้และกำไรที่คำนวณจากทะเบียนคุมงบเปลี่ยนแปลงอย่างไรในแต่ละปีงบประมาณ"
     },
     {
       "name": "Revenue comparison",
       "visualization": "clickable sorted horizontal bars",
-      "question": "ประเภทและไตรมาสใดทำรายได้สูง และเกี่ยวข้องกับ KPI/รายละเอียดใด"
+      "question": "ประเภทและกลุ่มทะเบียนใดทำรายได้สูง และเกี่ยวข้องกับ KPI/รายละเอียดใด"
     },
     {
       "name": "Quality and risk",
@@ -40,6 +40,11 @@
       "name": "Non-income academic services",
       "visualization": "year filter, KPI cards, participant bars, social-benefit bars, and detail table",
       "question": "กิจกรรมบริการวิชาการที่ไม่ได้รายได้ดำเนินการอย่างไรและเกิดประโยชน์ต่อสังคมเพียงใด"
+    },
+    {
+      "name": "Budget comparison",
+      "visualization": "year filter, KPI cards, revenue-by-year/type bars, and detail table",
+      "question": "ทะเบียนคุมงบปี 2567–2569 เปรียบเทียบรายได้ รายจ่าย และกำไรได้อย่างไร"
     }
   ]
 }
