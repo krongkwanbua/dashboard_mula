@@ -9,4 +9,4 @@
 ## Limitations
 - Financial totals are not reconciled: reported profit differs from revenue minus expense by **2,429,888.76 THB**.
 - The source includes exact duplicate rows and missing values; the dashboard retains all source rows.
-- Only fiscal year 2568 is present in the consolidated dashboard source, so year-over-year analysis is unsupported.
+- The dashboard contains fiscal years 2563-2569. Comparisons appear only after selecting a fiscal year, because partial-year coverage can affect interpretation.

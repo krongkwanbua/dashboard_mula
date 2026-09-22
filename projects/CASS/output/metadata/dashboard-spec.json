@@ -12,14 +12,19 @@
       "question": "ผลการดำเนินงานรวมเป็นอย่างไร"
     },
     {
+      "name": "Year-over-year KPI comparison",
+      "visualization": "semantic delta indicators",
+      "question": "ปีที่เลือกเปลี่ยนแปลงจากปีก่อนหน้าเท่าใด"
+    },
+    {
       "name": "Annual financial trend",
       "visualization": "two-series line chart",
       "question": "รายได้และกำไรสุทธิที่รายงานเปลี่ยนแปลงอย่างไรในแต่ละปีงบประมาณ"
     },
     {
       "name": "Revenue comparison",
-      "visualization": "sorted horizontal bars",
-      "question": "ประเภทและไตรมาสใดทำรายได้สูง"
+      "visualization": "clickable sorted horizontal bars",
+      "question": "ประเภทและไตรมาสใดทำรายได้สูง และเกี่ยวข้องกับ KPI/รายละเอียดใด"
     },
     {
       "name": "Quality and risk",

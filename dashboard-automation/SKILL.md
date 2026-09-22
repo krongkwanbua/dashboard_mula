@@ -100,7 +100,7 @@ Use this default config:
   "audience": "auto",
   "show_insights": true,
   "show_data_table": true,
-  "responsive": true
+  "responsive": true,
   "theme": "mahidol-faculty"
 }
 
@@ -229,6 +229,28 @@ Recommended sections:
 5. Rankings
 6. Insights/alerts
 7. Detail table where useful
+
+## Interaction and comparison standard
+
+For every dashboard run, read this skill before discovery and follow the full
+workflow. A generated dashboard should include the following when its data
+supports them:
+
+- A brief, non-looping load animation for chart marks that respects
+  `prefers-reduced-motion`.
+- Cross-filtering: clicking a chart category applies that category as a filter
+  to KPI cards, charts, and detail tables; provide a visible way to clear it.
+- Year-over-year KPI comparisons when a fiscal or calendar year dimension is
+  available. When one or more years are selected, compare the latest selected
+  year with the immediately preceding year using the same remaining filters.
+- A green upward indicator only when higher is favorable, and a red downward
+  indicator only when lower is unfavorable. Reverse this meaning for metrics
+  such as cost where lower is favorable.
+- If the prior period is absent or not comparable, show `ไม่มีฐานเปรียบเทียบ`
+  rather than calculating or fabricating a percentage.
+
+Record supported interaction and comparison behavior in the dashboard spec and
+QA report.
 
 ## QA
 

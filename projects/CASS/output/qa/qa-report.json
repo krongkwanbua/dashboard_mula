@@ -1,6 +1,6 @@
 {
   "project": "cass",
-  "timestamp": "2026-09-22T11:14:27.544558+07:00",
+  "timestamp": "2026-09-22T11:35:07.603271+07:00",
   "status": "NOT READY",
   "critical_errors": [
     {
@@ -59,6 +59,18 @@
       "check": "interactive filters",
       "expected": "multi-select fiscal year, quarter, project type, service group, unit",
       "actual": "implemented",
+      "result": "PASS"
+    },
+    {
+      "check": "chart interactions",
+      "expected": "animated chart load and bar cross-filter with clear action",
+      "actual": "implemented with reduced-motion support",
+      "result": "PASS"
+    },
+    {
+      "check": "year-over-year KPI indicators",
+      "expected": "selected-year comparison with semantic arrows",
+      "actual": "implemented with unavailable-base state",
       "result": "PASS"
     },
     {

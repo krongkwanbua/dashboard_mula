@@ -1,7 +1,7 @@
 {
   "project": "cass",
   "theme": "mahidol-faculty",
-  "generated_at": "2026-09-22T11:14:27.542791+07:00",
+  "generated_at": "2026-09-22T11:35:07.602095+07:00",
   "input_files": [
     "Academic_services_without_income.xlsx",
     "Operational & Service Excellence by CAAS.xlsx"
@@ -313,6 +313,7 @@
       "satisfaction"
     ],
     "dimensions": [
+      "fiscal_year",
       "quarter",
       "project_type",
       "service_group",
