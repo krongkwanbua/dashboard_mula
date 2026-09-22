@@ -1,0 +1,10 @@
+{
+  "name": "cass",
+  "language": "th",
+  "timezone": "Asia/Bangkok",
+  "dashboard_type": "operational-service-excellence",
+  "audience": "ผู้บริหารและผู้ปฏิบัติงาน CAAS",
+  "show_insights": true,
+  "show_data_table": true,
+  "responsive": true
+}

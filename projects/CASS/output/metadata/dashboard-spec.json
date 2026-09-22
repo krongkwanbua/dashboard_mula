@@ -1,0 +1,30 @@
+{
+  "title": "CASS Operational & Service Excellence",
+  "sections": [
+    {
+      "name": "Filters",
+      "visualization": "select controls",
+      "question": "ต้องการดูมิติใด"
+    },
+    {
+      "name": "KPI overview",
+      "visualization": "KPI cards",
+      "question": "ผลการดำเนินงานรวมเป็นอย่างไร"
+    },
+    {
+      "name": "Revenue comparison",
+      "visualization": "sorted horizontal bars",
+      "question": "ประเภทและไตรมาสใดทำรายได้สูง"
+    },
+    {
+      "name": "Quality and risk",
+      "visualization": "alerts",
+      "question": "มีข้อจำกัดใด"
+    },
+    {
+      "name": "Record details",
+      "visualization": "filterable table",
+      "question": "รายการใดอยู่เบื้องหลังตัวเลข"
+    }
+  ]
+}

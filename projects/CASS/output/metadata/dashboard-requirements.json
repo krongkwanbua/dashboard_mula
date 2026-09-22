@@ -1,0 +1,58 @@
+{
+  "audience": "ผู้บริหารและผู้ปฏิบัติงาน CAAS",
+  "purpose": "ติดตามผลการดำเนินงานบริการและความเป็นเลิศในการให้บริการของ CAAS",
+  "questions": [
+    "รายได้ ค่าใช้จ่าย และกำไรที่รายงานเป็นเท่าใด",
+    "ประเภทและไตรมาสใดสร้างรายได้สูง",
+    "จำนวนผู้เข้าร่วมและความพึงพอใจเป็นอย่างไร",
+    "ข้อมูลมีข้อจำกัดใดก่อนใช้ตัดสินใจ"
+  ],
+  "kpis": [
+    {
+      "name": "รายได้",
+      "definition": "ผลรวมรายได้จากทุกบันทึก",
+      "formula": "SUM(revenue)",
+      "source_fields": [
+        "รายได้"
+      ],
+      "aggregation": "sum",
+      "limitations": "รวมรายการซ้ำตามไฟล์ต้นทาง"
+    },
+    {
+      "name": "กำไรสุทธิที่รายงาน",
+      "definition": "ผลรวมค่ากำไรสุทธิที่บันทึก",
+      "formula": "SUM(reported_profit)",
+      "source_fields": [
+        "กำไรสุทธิ"
+      ],
+      "aggregation": "sum",
+      "limitations": "ไม่สอดคล้องกับรายได้หักค่าใช้จ่ายในระดับรวม"
+    },
+    {
+      "name": "ผู้เข้าร่วมจริง",
+      "definition": "ผลรวมจำนวนผู้เข้าร่วมจริง",
+      "formula": "SUM(actual_participants)",
+      "source_fields": [
+        "จำนวนที่เข้าร่วมจริง"
+      ],
+      "aggregation": "sum",
+      "limitations": "มีค่าขาดหายซึ่งถูกแสดงเป็นศูนย์ใน analytical dataset"
+    },
+    {
+      "name": "ความพึงพอใจเฉลี่ย",
+      "definition": "ค่าเฉลี่ยธรรมดาของคะแนนที่มีค่า",
+      "formula": "AVG(satisfaction where satisfaction > 0)",
+      "source_fields": [
+        "ความพึงพอใจ"
+      ],
+      "aggregation": "average",
+      "limitations": "ไม่มีจำนวนผู้ตอบแบบประเมินสำหรับถ่วงน้ำหนัก"
+    }
+  ],
+  "filters": [
+    "quarter",
+    "project_type",
+    "service_group",
+    "unit"
+  ]
+}

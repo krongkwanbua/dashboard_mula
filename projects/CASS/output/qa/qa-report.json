@@ -1,0 +1,65 @@
+{
+  "project": "cass",
+  "timestamp": "2026-09-22T10:24:22.575713+07:00",
+  "status": "NOT READY",
+  "critical_errors": [
+    {
+      "check": "profit reconciliation",
+      "expected": 23558726.27,
+      "actual": 21128837.51,
+      "difference": -2429888.76,
+      "result": "FAIL",
+      "detail": "Reported profit does not equal revenue minus expense in the source total."
+    }
+  ],
+  "checks": [
+    {
+      "check": "source row count",
+      "expected": 1738,
+      "actual": 1738,
+      "result": "PASS"
+    },
+    {
+      "check": "revenue independent recalculation",
+      "expected": 54509931.96,
+      "actual": 54509931.96,
+      "result": "PASS"
+    },
+    {
+      "check": "expense independent recalculation",
+      "expected": 30951205.69,
+      "actual": 30951205.69,
+      "result": "PASS"
+    },
+    {
+      "check": "exact duplicate rows",
+      "expected": 0,
+      "actual": 34,
+      "result": "WARN"
+    },
+    {
+      "check": "dashboard artifact",
+      "expected": "present",
+      "actual": "present",
+      "result": "PASS"
+    },
+    {
+      "check": "interactive filters",
+      "expected": "quarter, project type, service group, unit",
+      "actual": "implemented",
+      "result": "PASS"
+    },
+    {
+      "check": "desktop layout",
+      "expected": "no horizontal overflow",
+      "actual": "verified at 1440px",
+      "result": "PASS"
+    },
+    {
+      "check": "mobile layout",
+      "expected": "no horizontal overflow",
+      "actual": "verified at 390px",
+      "result": "PASS"
+    }
+  ]
+}

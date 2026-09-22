@@ -1,0 +1,10 @@
+{
+  "name": "example",
+  "language": "th",
+  "timezone": "Asia/Bangkok",
+  "dashboard_type": "auto",
+  "audience": "auto",
+  "show_insights": true,
+  "show_data_table": true,
+  "responsive": true
+}

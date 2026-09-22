@@ -1,0 +1,30 @@
+{
+  "project": "cass",
+  "run_id": "cass-20260922T102422",
+  "input_files": [
+    "Academic_services_without_income.xlsx",
+    "Operational & Service Excellence by CAAS.xlsx"
+  ],
+  "stages": [
+    "DISCOVER",
+    "PROFILE",
+    "QUALITY",
+    "ANALYZE",
+    "REQUIREMENTS",
+    "DESIGN",
+    "TRANSFORM",
+    "BUILD",
+    "QA",
+    "INSIGHTS",
+    "DELIVER"
+  ],
+  "status": "NOT READY",
+  "warnings": [
+    "34 exact duplicates in consolidated source",
+    "material missing values in consolidated source"
+  ],
+  "critical_errors": [
+    "reported profit does not reconcile to revenue minus expense"
+  ],
+  "timestamp": "2026-09-22T10:24:22.580387+07:00"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Dashboard Requirements",
+  "type": "object",
+  "properties": {
+    "audience": {
+      "type": "string"
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "questions": {
+      "type": "array"
+    },
+    "kpis": {
+      "type": "array"
+    },
+    "filters": {
+      "type": "array"
+    }
+  }
+}
