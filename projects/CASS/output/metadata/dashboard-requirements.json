@@ -50,6 +50,7 @@
     }
   ],
   "filters": [
+    "fiscal_year",
     "quarter",
     "project_type",
     "service_group",

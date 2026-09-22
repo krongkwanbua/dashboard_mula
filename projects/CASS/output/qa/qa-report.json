@@ -1,6 +1,6 @@
 {
   "project": "cass",
-  "timestamp": "2026-09-22T10:24:22.575713+07:00",
+  "timestamp": "2026-09-22T10:41:03.801465+07:00",
   "status": "NOT READY",
   "critical_errors": [
     {
@@ -45,7 +45,7 @@
     },
     {
       "check": "interactive filters",
-      "expected": "quarter, project type, service group, unit",
+      "expected": "multi-select fiscal year, quarter, project type, service group, unit",
       "actual": "implemented",
       "result": "PASS"
     },

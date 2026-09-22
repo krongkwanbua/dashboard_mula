@@ -3,8 +3,8 @@
   "sections": [
     {
       "name": "Filters",
-      "visualization": "select controls",
-      "question": "ต้องการดูมิติใด"
+      "visualization": "multi-select checkbox menus",
+      "question": "ต้องการดูปีงบประมาณและมิติใดบ้าง"
     },
     {
       "name": "KPI overview",
